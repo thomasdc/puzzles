@@ -4,17 +4,18 @@ using System.Linq;
 using Shouldly;
 using Xunit;
 
-Console.WriteLine(File.ReadAllText("input.txt").CalculateChecksum());
+var input = File.ReadAllText("input.txt");
+Console.WriteLine(input.CalculateChecksum(input.Length / 2));
 
 public static class Solver
 {
-    public static double CalculateChecksum(this string inputString)
+    public static double CalculateChecksum(this string inputString, int diff = 1)
     {
         var numbers = inputString.Select(_ => int.Parse(_.ToString())).ToArray();
         double checksum = 0;
         for (var i=0; i<numbers.Length; i++)
         {
-            checksum += numbers[i] == numbers[(i + 1) % numbers.Length] ? numbers[i] : 0;
+            checksum += numbers[i] == numbers[(i + diff) % numbers.Length] ? numbers[i] : 0;
         }
         
         return checksum;
@@ -32,4 +33,11 @@ public static class Tests
 
     [Fact]
     public static void ValidateInputExample() => File.ReadAllText("input.txt").CalculateChecksum().ShouldBe(1171);
+
+    [Fact]
+    public static void ValidateInputExample2()
+    {
+        var input = File.ReadAllText("input.txt");
+        input.CalculateChecksum(input.Length / 2).ShouldBe(1024);
+    }
 }
