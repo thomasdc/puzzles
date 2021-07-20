@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Checksum", "Checksum\Checks
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stream", "Stream\Stream.csproj", "{3927A6F4-D206-4D04-9679-64A5A0C09B06}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fractal", "Fractal\Fractal.csproj", "{6B94FCB0-BDA1-49A8-A38E-5870070514E8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{3927A6F4-D206-4D04-9679-64A5A0C09B06}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3927A6F4-D206-4D04-9679-64A5A0C09B06}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3927A6F4-D206-4D04-9679-64A5A0C09B06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B94FCB0-BDA1-49A8-A38E-5870070514E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B94FCB0-BDA1-49A8-A38E-5870070514E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B94FCB0-BDA1-49A8-A38E-5870070514E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B94FCB0-BDA1-49A8-A38E-5870070514E8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
